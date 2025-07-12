@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body
+{  
+    font-size: 62.5%; 
+    font-family: "Times New Roman",Georgia ,Serif;
+    line-height: 1.5;
+    color:#000; 
+}
+.fixed-header{
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+
+.header{
+    background-color:#fff;
+    /* border:2px solid red; */
+    display:flex;    
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px !important;
+    letter-spacing: 0.2rem;
+    /* position:fixed; */
+}
+.header a{
+    font-size: 1rem;
+    padding:8px 16px !important;
+    outline:0;
+    border:none;
+    text-decoration: none  ;
+    color: #000;;
+}
+
+.nav{
+    display:flex;
+    flex-direction: row;
+    width:50%;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 1rem;  
+}
+
+.nav ul{
+      padding:8px 16px !important;
+}
+
+.header a:hover,
+.nav ul:hover
+{
+    background-color: rgb(207, 207, 207);  
+    
+}
+.header-image{
+    max-width:100%;
+    height:auto;
+    vertical-align: middle; 
+    position: relative;
+}
+
+.img-content{
+    position: absolute;
+    bottom: 2%;
+    font-size: 1.5rem;
+    padding-left: 1rem;
+    opacity: 0.60;
+    /* vertical-align: middle;  */
+}
+
+/* about */
+
+.about{
+    display:flex; 
+    padding:6rem; 
+    /* border: 2px solid red; */
+}
+
+.about-img {
+    width: 50%;
+    height: auto; 
+    /* border: 2px solid green; */
+    vertical-align: middle;
+    border-radius: 0.3rem;
+}
+
+.about-content{
+    /* border:2px solid purple; */
+    padding: 2rem;
+    width: 50%;
+    border-radius: 0.3rem;
+    /* letter-spacing: 5px; */
+}
+
+.about-content h1{
+    text-align: center;
+    font-family: "Playfair Display", Georgia, Serif;
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    margin:10px 0;
+    margin-bottom:2rem;
+}
+
+.about-content p{
+    word-spacing: 0.2rem;
+    padding:1rem;
+}
+.about-content > p:first-of-type{
+    text-align:center;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    letter-spacing: 5px;
+    font-weight: 400;
+} 
+
+.about-content p{
+    font-size:1rem;
+   font-weight: 700;
+  
+}
+
+.span-background{
+    background-color: #f1f1f1 !important;
+    padding:0.3rem;
+}
+.opacity{
+    opacity: 0.60;
+}
+
+.hr-style{
+    width: 90%; 
+    position: relative;
+    left: 5%;
+    color: #fffafa;
+}
+
+.menu{
+    display:flex;
+    flex-direction: row;
+    padding:6rem;
+    border-radius: 5rem;
+    
+}
+.menu-content{
+    padding: 3rem;
+    width: 50%;
+    /* border: 2px solid red; */
+    border-radius: 0.3rem;
+    margin: 1rem;
+}
+
+.menu-header{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.menu-p-grey{
+    color: #757575 !important;
+  font-size: 1rem;
+    padding: 1rem 0;
+}
+.menu h4{
+     font-family: "Playfair Display";
+    letter-spacing: 5px;
+    font-size: 1.2rem;
+    line-height:1.2rem;
+}
+.menu-img{
+    border-radius: 0.3rem;
+}
