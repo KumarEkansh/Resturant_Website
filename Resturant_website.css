@@ -5,15 +5,16 @@
 }
 body
 {  
+   
     font-size: 62.5%; 
     font-family: "Times New Roman",Georgia ,Serif;
     line-height: 1.5;
-    color:#000; 
+    /* color:#000;  */
 }
 .fixed-header{
     position: fixed;
-    width: 100vw;
-    z-index: 2;
+    width:100%;
+    z-index: 1;
 }
 
 .header{
@@ -130,25 +131,24 @@ body
 }
 
 .hr-style{
-    width: 90%; 
+    width: 85%; 
     position: relative;
-    left: 5%;
+    left: 7%;
     color: #fffafa;
 }
 
 .menu{
     display:flex;
     flex-direction: row;
-    padding:6rem;
+    padding: 6rem;
     border-radius: 5rem;
     
 }
 .menu-content{
-    padding: 3rem;
+    padding: 2rem;
     width: 50%;
     /* border: 2px solid red; */
     border-radius: 0.3rem;
-    margin: 1rem;
 }
 
 .menu-header{
@@ -159,7 +159,7 @@ body
 
 .menu-p-grey{
     color: #757575 !important;
-  font-size: 1rem;
+    font-size: 1rem;
     padding: 1rem 0;
 }
 .menu h4{
@@ -170,4 +170,117 @@ body
 }
 .menu-img{
     border-radius: 0.3rem;
+    width:100%;
+}
+
+.contact-content{
+    padding:8rem;
+}
+.contact-content h1{
+    font-weight: 400;
+     font-size: 2rem;
+    letter-spacing: 5px;
+    margin:1rem 0;
+}
+
+.contact-content-p
+{
+  padding: 1rem 0;
+    line-height: 0.9rem;
+    font-size: 1.6rem;
+
+}
+
+.address{
+    color:blue;
+    opacity:0.4;
+}
+.content-p
+{
+   font-weight: 400;
+    font-size: 0.9rem;
+    margin: 1rem 0;
+}
+.contact-content form input
+{
+    padding: 20px;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    
+}
+
+.address {
+    color: blue;
+    opacity: 0.4;
+    line-height: 1.5em;
+}
+
+form button{
+     padding: 0.3rem;
+     margin-top:2rem;
+}
+
+footer{
+    color: #000 !important;
+    background-color: #f1f1f1 !important;
+    text-align: center;
+    height:20vh;
+    padding-top:2rem;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 580px) {
+ .contact-content,.menu,.about
+ {
+    padding:2rem;
+ }
+
+ .fixed-header img{
+    width:auto;
+ }
+
+ .menu{
+    display:flex;
+    flex-direction: column;
+     
+ }
+ .menu .menu-content{
+     /* width:100%;      */
+     /* border:2px solid red; */
+     width:100%;
+ }
+
+ .menu-content img {
+    width:100%;
+ }
+
+ .about img {
+    height:50%;
+ }
+ /* .hr-style{
+     width: 100%; 
+    position: relative;
+    left: 7%;
+    color: #fffafa; 
+ } 
+*/
+
+.hr-style{
+     width: 100%; 
+    position:relative;
+    left:0;
+}
+.fixed-header .nav
+{
+    display: none;
+}
+
+.fixed-header .header a{
+    /* text-align: center; */
+    position:relative;
+    left:25%;
+}
+
 }
